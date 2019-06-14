@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/engine/index/InvertedIndexManager.java" line="1218" mnemonic="0" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2f2b9d1d-d7a6-4779-a19d-8e0ff25ea192" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/engine/analysis/PorterStemmer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/engine/analysis/PunctuationTokenizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/engine/analysis/WordBreakTokenizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/engine/analysis/PorterStemmerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/engine/analysis/PunctuationTokenizerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/engine/analysis/WordBreakTokenizerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/analysis/Analyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/analysis/Analyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/analysis/ComposableAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/analysis/ComposableAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/analysis/NaiveAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/analysis/NaiveAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/analysis/PorterStemmer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/analysis/PunctuationTokenizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/analysis/Stemmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/analysis/Stemmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/analysis/StopWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/analysis/StopWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/analysis/Tokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/analysis/Tokenizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/analysis/WordBreakTokenizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/search/FullScanSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/search/FullScanSearcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/storage/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/storage/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/storage/DocumentStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/storage/DocumentStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uci/ics/cs221/storage/MapdbDocStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engine/storage/MapdbDocStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uci/ics/cs221/analysis/punctuation/PunctuationTokenizerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uci/ics/cs221/analysis/stemmer/PorterStemmerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uci/ics/cs221/analysis/wordbreak/WordBreakTokenizerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uci/ics/cs221/search/FullScanSearcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/engine/search/FullScanSearcherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uci/ics/cs221/storage/MapdbDocStoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/engine/storage/MapDocStoreTest.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>the</find>
+      <find>cat</find>
+      <find>cat,</find>
+      <find>re</find>
+      <find>there</find>
+      <find>A</find>
+      <find>で</find>
+      <find>に</find>
+      <find>を</find>
+      <find>indexsegment</find>
+      <find>getIndexListGivenLen</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/edu/uci/ics/cs221/analysis/PorterStemmerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/uci/ics/cs221/analysis/PunctuationTokenizerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/uci/ics/cs221/analysis/WordBreakTokenizerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/search/IcsSearchEngine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/index/inverted/PositionalIndexManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/inverted/AndSearchTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/inverted/DeletionTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/inverted/FlushTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/inverted/KeywordSearchTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/inverted/MergeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/inverted/OrSearchTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/inverted/StressTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/positional/PositionalFlushTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/positional/PositionalMergeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/Team10TfIdfTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/Team12SearchTfIdfTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/Team5DocumentFrequencyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team11TfIdfTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team22.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team7.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team8.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team9.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/search/SearchEngine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/index/DeltaVarLenCompressor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/index/InvertedIndexManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/index/PageFileChannel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/index/PositionalIndexManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/analysis/Analyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/analysis/ComposableAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/analysis/NaiveAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/analysis/PorterStemmer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/analysis/Stemmer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/analysis/Tokenizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/search/FullScanSearcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/HelloWorld.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/positional/PositionalStressTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/positional/PhraseSearchTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team3.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team4.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team5DocumentFrequencyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team6.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team19.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/DocumentFrequencyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/TfIdfTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team12SearchTfIdfTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team17.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/team18.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/index/ranking/SearchTfIdfTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/engine/search/SearchEngineTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cs221" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SearchEngine" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.uci.ics.cs221.analysis" />
+      <recent name="edu.uci.ics.cs221" />
+      <recent name="edu.uci.ics.cs221.index.inverted" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.SearchEnginePageRankTest (1)">
+    <configuration name="IcsSearchEngine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.uci.ics.cs221.search.IcsSearchEngine" />
+      <module name="PeterManSearchEngine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uci.ics.cs221.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchEnginePageRankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PeterManSearchEngine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="engine.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="engine.search" />
+      <option name="MAIN_CLASS_NAME" value="engine.search.SearchEnginePageRankTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchEnginePageRankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PeterManSearchEngine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uci.ics.cs221.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uci.ics.cs221.search" />
+      <option name="MAIN_CLASS_NAME" value="edu.uci.ics.cs221.search.SearchEnginePageRankTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchEngineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PeterManSearchEngine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uci.ics.cs221.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uci.ics.cs221.search" />
+      <option name="MAIN_CLASS_NAME" value="edu.uci.ics.cs221.search.SearchEngineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchEngineTest.testCombinePageRankTfIdf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PeterManSearchEngine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uci.ics.cs221.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uci.ics.cs221.search" />
+      <option name="MAIN_CLASS_NAME" value="edu.uci.ics.cs221.search.SearchEngineTest" />
+      <option name="METHOD_NAME" value="testCombinePageRankTfIdf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="cs221" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.IcsSearchEngine" />
+      <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="JUnit.SearchEnginePageRankTest" />
+      <item itemvalue="JUnit.SearchEngineTest" />
+      <item itemvalue="JUnit.SearchEngineTest.testCombinePageRankTfIdf" />
+      <item itemvalue="JUnit.SearchEnginePageRankTest (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SearchEnginePageRankTest (1)" />
+        <item itemvalue="Application.IcsSearchEngine" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f2b9d1d-d7a6-4779-a19d-8e0ff25ea192" name="Default Changelist" comment="" />
+      <created>1554577517543</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554577517543</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="IcsSearchEnginePageRankTest - 2019.06.09 at 20h 22m 13s.xml">
+      <configuration name="IcsSearchEnginePageRankTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IcsSearchEngineTest - 2019.06.09 at 20h 24m 40s.xml">
+      <configuration name="IcsSearchEngineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IcsSearchEngineTest - 2019.06.09 at 20h 27m 49s.xml">
+      <configuration name="IcsSearchEngineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IcsSearchEngineTest - 2019.06.09 at 20h 29m 05s.xml">
+      <configuration name="IcsSearchEngineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IcsSearchEngineTest - 2019.06.09 at 20h 32m 19s.xml">
+      <configuration name="IcsSearchEngineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IcsSearchEngineTest - 2019.06.09 at 20h 33m 05s.xml">
+      <configuration name="IcsSearchEngineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IcsSearchEngineTest - 2019.06.09 at 20h 35m 52s.xml">
+      <configuration name="IcsSearchEngineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IcsSearchEnginePageRankTest - 2019.06.10 at 00h 57m 43s.xml">
+      <configuration name="IcsSearchEnginePageRankTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IcsSearchEngineTest - 2019.06.10 at 01h 03m 12s.xml">
+      <configuration name="IcsSearchEngineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchEnginePageRankTest_(1) - 2019.06.10 at 01h 57m 04s.xml">
+      <configuration name="SearchEnginePageRankTest (1)" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21173105" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.43493977" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50143063" side_tool="true" weight="0.43493977" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32891566" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/index/PositionalIndexSegmentForTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/index/PositionalWordInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/index/WordInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/analysis/Analyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/analysis/ComposableAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/analysis/JapaneseWordBreaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/analysis/NaiveAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/analysis/PorterStemmer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="442" column="9" lean-forward="true" selection-start-line="442" selection-start-column="9" selection-end-line="442" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/analysis/PunctuationTokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/analysis/Stemmer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/analysis/Tokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/analysis/StopWords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/analysis/WordBreakTokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-865">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/search/FullScanSearcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/search/SearchEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="262" column="27" selection-start-line="262" selection-start-column="27" selection-end-line="262" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/analysis/JapaneseWordBreakerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/analysis/PorterStemmerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/analysis/PunctuationTokenizerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/analysis/WordBreakTokenizerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/inverted/AndSearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/inverted/DeletionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/inverted/FlushTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/inverted/KeywordSearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/inverted/MergeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/inverted/OrSearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/inverted/StressTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/positional/CompressorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3717">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/positional/PositionalStressTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/positional/PositionalFlushTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/positional/PositionalMergeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/positional/phrase/Team17PhraseSearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="45" selection-start-line="45" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/positional/phrase/Team18PhraseSearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="105" column="1" lean-forward="true" selection-end-line="105" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/positional/PhraseSearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6900">
+          <caret line="480" column="1" selection-start-line="480" selection-start-column="1" selection-end-line="480" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/positional/IndexCompressionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team5DocumentFrequencyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team19.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/ranking/DocumentFrequencyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/ranking/TfIdfTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team12SearchTfIdfTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/Team17.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/ranking/teams/team18.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/search/FullScanSearcherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/search/SearchEngineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/search/SearchEnginePageRankTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-254">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/engine/index/ranking/SearchTfIdfTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3690">
+          <caret line="246" selection-start-line="246" selection-end-line="246" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lucene-core-8.0.01</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

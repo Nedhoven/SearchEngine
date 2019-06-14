@@ -1,0 +1,5 @@
+/Users/nader/Workspace/spring19-cs221-project/src/test/java/edu/uci/ics/cs221/analysis/stemmer/PorterStemmerTest.java
+/Users/nader/Workspace/spring19-cs221-project/src/test/java/edu/uci/ics/cs221/analysis/punctuation/PunctuationTokenizerTest.java
+/Users/nader/Workspace/spring19-cs221-project/src/test/java/edu/uci/ics/cs221/storage/MapdbDocStoreTest.java
+/Users/nader/Workspace/spring19-cs221-project/src/test/java/edu/uci/ics/cs221/search/FullScanSearcherTest.java
+/Users/nader/Workspace/spring19-cs221-project/src/test/java/edu/uci/ics/cs221/analysis/wordbreak/WordBreakTokenizerTest.java
