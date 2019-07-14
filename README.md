@@ -1,5 +1,5 @@
 # SearchEngine
-This my complete and finished search engine project
+This is a search engine project
 
 You will be needing maven and IntelliJ to operate this project correctly!
 
